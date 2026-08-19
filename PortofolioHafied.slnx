@@ -1,6 +1,8 @@
 <Solution>
   <Folder Name="/MyPortofolio/" />
-  <Folder Name="/MyPortofolio/css/" />
+  <Folder Name="/MyPortofolio/css/">
+    <File Path="style.css" />
+  </Folder>
   <Folder Name="/MyPortofolio/html/">
     <File Path="index.html" />
   </Folder>
