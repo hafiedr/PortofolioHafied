@@ -6,10 +6,15 @@
 
 body {
     min-height: 100vh;
-    background: #080d1c;
+    background: radial-gradient( circle at 75% 50%, rgba(245, 189, 53, 0.15), transparent 30% ), #080d1c;
     color: white;
     font-family: Arial, sans-serif;
 }
+
+
+/* =========================
+   NAVBAR
+========================= */
 
 header {
     width: 100%;
@@ -24,19 +29,31 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 100px;
-    background: rgba(30, 34, 55, 0.8);
-    border-radius: 0 0 30px 30px;
+    background: rgba(30, 34, 55, 0.75);
+    backdrop-filter: blur(15px);
+    border-radius: 0 0 35px 35px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
     nav a {
         color: white;
         text-decoration: none;
         font-size: 18px;
+        transition: 0.3s;
     }
+
+        nav a:hover {
+            color: #f5bd35;
+        }
 
         nav a.active {
             color: #f5bd35;
         }
+
+
+/* =========================
+   HERO
+========================= */
 
 .hero {
     min-height: calc(100vh - 90px);
@@ -56,7 +73,13 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+
+
+/* =========================
+   TEXT
+========================= */
 
 .hero-text h1 {
     font-size: 70px;
@@ -71,6 +94,7 @@ nav {
     .hero-text h2 span {
         color: #f5bd35;
     }
+
 .line {
     width: 70px;
     height: 3px;
@@ -85,6 +109,11 @@ nav {
     line-height: 1.8;
     margin-bottom: 35px;
 }
+
+
+/* =========================
+   BUTTON
+========================= */
 
 .button {
     display: inline-block;
@@ -102,3 +131,80 @@ nav {
         transform: translateY(-3px);
         box-shadow: 0 10px 30px rgba(245, 189, 53, 0.3);
     }
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: #f5bd35;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.25;
+    z-index: 0;
+}
+
+.hero-image img {
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        width: 90%;
+        gap: 25px;
+    }
+
+        nav a {
+            font-size: 14px;
+        }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 25px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .hero-text h1 {
+        font-size: 45px;
+    }
+
+    .hero-text h2 {
+        font-size: 30px;
+    }
+
+    .line {
+        margin: 25px auto;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero-image img {
+        width: 350px;
+    }
+}
