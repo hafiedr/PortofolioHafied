@@ -1,4 +1,4 @@
-﻿* {
+﻿/** {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,14 +9,14 @@ body {
     background: radial-gradient( circle at 75% 50%, rgba(245, 189, 53, 0.15), transparent 30% ), #080d1c;
     color: white;
     font-family: Arial, sans-serif;
-}
+}*/
 
 
 /* =========================
    NAVBAR
 ========================= */
 
-header {
+/*header {
     width: 100%;
     padding-top: 20px;
 }
@@ -48,14 +48,14 @@ nav {
 
         nav a.active {
             color: #f5bd35;
-        }
+        }*/
 
 
 /* =========================
    HERO
 ========================= */
 
-.hero {
+/*.hero {
     min-height: calc(100vh - 90px);
     display: flex;
     align-items: center;
@@ -74,14 +74,14 @@ nav {
     justify-content: center;
     align-items: center;
     position: relative;
-}
+}*/
 
 
 /* =========================
    TEXT
 ========================= */
 
-.hero-text h1 {
+/*.hero-text h1 {
     font-size: 70px;
     margin-bottom: 15px;
 }
@@ -108,14 +108,14 @@ nav {
     font-size: 18px;
     line-height: 1.8;
     margin-bottom: 35px;
-}
+}*/
 
 
 /* =========================
    BUTTON
 ========================= */
 
-.button {
+/*.button {
     display: inline-block;
     padding: 16px 30px;
     background: #f5bd35;
@@ -130,14 +130,14 @@ nav {
     .button:hover {
         transform: translateY(-3px);
         box-shadow: 0 10px 30px rgba(245, 189, 53, 0.3);
-    }
+    }*/
 
 
 /* =========================
    IMAGE
 ========================= */
 
-.hero-image::before {
+/*.hero-image::before {
     content: "";
     position: absolute;
     width: 450px;
@@ -155,14 +155,14 @@ nav {
     width: 500px;
     max-width: 100%;
     object-fit: contain;
-}
+}*/
 
 
 /* =========================
    RESPONSIVE
 ========================= */
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
 
     nav {
         width: 90%;
@@ -207,4 +207,4 @@ nav {
     .hero-image img {
         width: 350px;
     }
-}
+}*/

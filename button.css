@@ -1,0 +1,16 @@
+﻿.button {
+    display: inline-block;
+    padding: 16px 30px;
+    background: var(--color-primary);
+    color: #111;
+    border-radius: var(--radius-large);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(245, 189, 53, 0.3);
+}

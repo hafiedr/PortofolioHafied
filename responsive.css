@@ -1,0 +1,45 @@
+﻿@media (max-width: 768px) {
+    nav {
+        width: 90%;
+        gap: 25px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 25px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .hero-text h1 {
+        font-size: 45px;
+    }
+
+    .hero-text h2 {
+        font-size: 30px;
+    }
+
+    .line {
+        margin: 25px auto;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero-image img {
+        width: 350px;
+    }
+}

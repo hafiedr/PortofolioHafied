@@ -1,0 +1,27 @@
+﻿@import url("variables.css");
+@import url("navbar.css");
+@import url("hero.css");
+@import url("responsive.css");
+@import url("button.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 75% 50%,
+            rgba(245, 189, 53, 0.15),
+            transparent 30%
+        ),
+        var(--color-background);
+
+    color: var(--color-text);
+
+    font-family: Arial, sans-serif;
+}

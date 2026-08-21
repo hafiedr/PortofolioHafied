@@ -1,0 +1,11 @@
+﻿:root {
+    --color-background: #080d1c;
+    --color-surface: #1e2237;
+    --color-primary: #f5bd35;
+    --color-text: #ffffff;
+    --color-text-muted: #b9bdc8;
+    --radius-small: 10px;
+    --radius-medium: 20px;
+    --radius-large: 30px;
+    --container-width: 1400px;
+}
