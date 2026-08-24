@@ -21,7 +21,8 @@ nav a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    transition: 0.3s;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -30,4 +31,20 @@ nav a:hover {
 
 nav a.active {
     color: #f5bd35;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+    width: 100%;
 }

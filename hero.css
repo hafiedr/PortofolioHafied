@@ -28,17 +28,9 @@
     padding: 50px 80px;
 }
 
-.hero-text {
-    width: 50%;
-}
 
-.hero-image {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
+
+
 
 
 .hero-text h1 {
@@ -70,3 +62,40 @@
     margin-bottom: 35px;
 }
 
+.hero-text {
+    animation: fadeUp 0.8s ease-out;
+    width: 50%;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: fadeZoom 1s ease-out;
+}
+
+@keyframes fadeZoom {
+    from {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
