@@ -2,15 +2,19 @@
   <Folder Name="/MyPortofolio/" />
   <Folder Name="/MyPortofolio/css/">
     <File Path="button.css" />
+    <File Path="contact.css" />
     <File Path="hero.css" />
     <File Path="main.css" />
+    <File Path="minibadge.css" />
     <File Path="navbar.css" />
     <File Path="responsive.css" />
-    <File Path="style.css" />
     <File Path="variables.css" />
   </Folder>
   <Folder Name="/MyPortofolio/html/">
     <File Path="index.html" />
+  </Folder>
+  <Folder Name="/MyPortofolio/html/pages/">
+    <File Path="contact.html" />
   </Folder>
   <Folder Name="/MyPortofolio/image/" />
 </Solution>

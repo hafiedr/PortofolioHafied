@@ -1,0 +1,98 @@
+﻿
+
+.hero-image-contact::before {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: #f5bd35;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.25;
+    z-index: 0;
+}
+
+.hero-image-contact img {
+    position: relative;
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    max-width: 100%;
+    object-fit: cover;
+    /*TAMBAHAN KODE UNTUK BORDER BENTUK LINGKARAN */
+    border: 10px solid rgba(245, 189, 53, 0.4); /*Lingkaran tipis bernuansa emas */
+    box-shadow: 0 0 0px rgba(245, 189, 53, 0.2);
+}
+
+.hero-image-contact {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: fadeZoom 1s ease-out;
+    margin-left: 0px;
+    margin-top: 30px;
+}
+
+.contact-content {
+    width: 100%;
+}
+
+.contact-eyebrow {
+    color: #f5bd35;
+    font-family: Arial, sans-serif;
+    font-size:15px;
+    text-align:center;
+    margin-top:20px;
+}
+
+.contact-title {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.contact-description {
+    margin-top: 12px;
+    line-height: 1.2;
+    opacity: 0.7;
+    text-align:center;
+    font-size:22px;
+}
+
+.contact-item-img {
+    width: 32px;  
+    height: 32px;  
+    margin-left:20px;
+}
+
+.contact-item-img * {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.contact-table{
+    margin-top:20px;
+    margin-left:470px;
+    border-spacing:10px;
+}
+
+.contact-link {
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .contact {
+        padding: 50px 25px;
+    }
+    .contact-title h1 {
+        font-size: 48px;
+    }
+}

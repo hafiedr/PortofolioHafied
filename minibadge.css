@@ -1,0 +1,28 @@
+﻿.minibadge {
+    /*min-height: calc(100vh - 90px);*/
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    margin-top: -70px;
+    padding: 0px 80px;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.tech-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    /*border: 1px solid #e5e7eb;*/
+    border-radius: 999px;
+    background: #f5bd35;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+}
