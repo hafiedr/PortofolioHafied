@@ -1,98 +1,262 @@
-﻿
+﻿/* =========================
+   CONTACT
+========================= */
 
-.hero-image-contact::before {
-    content: "";
-    position: absolute;
-    width: 450px;
-    height: 450px;
-    background: #f5bd35;
-    border-radius: 50%;
-    filter: blur(120px);
-    opacity: 0.25;
-    z-index: 0;
+.contact {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+    box-sizing: border-box;
 }
 
-.hero-image-contact img {
-    position: relative;
-    z-index: 1;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    max-width: 100%;
-    object-fit: cover;
-    /*TAMBAHAN KODE UNTUK BORDER BENTUK LINGKARAN */
-    border: 10px solid rgba(245, 189, 53, 0.4); /*Lingkaran tipis bernuansa emas */
-    box-shadow: 0 0 0px rgba(245, 189, 53, 0.2);
-}
+
+/* =========================
+   PROFILE IMAGE
+========================= */
 
 .hero-image-contact {
-    text-align: center;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    animation: fadeZoom 1s ease-out;
-    margin-left: 0px;
     margin-top: 30px;
+    animation: fadeZoom 1s ease-out;
 }
+
+    .hero-image-contact::before {
+        content: "";
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        max-width: 90vw;
+        max-height: 90vw;
+        background: #f5bd35;
+        border-radius: 50%;
+        filter: blur(120px);
+        opacity: 0.25;
+        z-index: 0;
+    }
+
+    .hero-image-contact img {
+        position: relative;
+        z-index: 1;
+        width: 250px;
+        height: 250px;
+        max-width: 70vw;
+        max-height: 70vw;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 10px solid rgba(245, 189, 53, 0.4);
+        box-sizing: border-box;
+    }
+
+
+/* =========================
+   CONTACT CONTENT
+========================= */
 
 .contact-content {
     width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.contact-header {
+    width: 100%;
+    text-align: center;
 }
 
 .contact-eyebrow {
     color: #f5bd35;
     font-family: Arial, sans-serif;
-    font-size:15px;
-    text-align:center;
-    margin-top:20px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .contact-title {
     text-align: center;
     font-family: Arial, sans-serif;
-    font-size: 40px;
-    margin-top: 10px;
+    font-size: clamp(30px, 5vw, 40px);
+    line-height: 1.1;
+    margin: 10px 0;
 }
 
+    .contact-title span {
+        color: #f5bd35;
+    }
+
 .contact-description {
-    margin-top: 12px;
-    line-height: 1.2;
+    width: 100%;
+    max-width: 750px;
+    margin: 15px auto 0;
+    line-height: 1.5;
     opacity: 0.7;
-    text-align:center;
-    font-size:22px;
+    text-align: center;
+    font-size: clamp(16px, 2.5vw, 22px);
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   CONTACT TABLE
+========================= */
+
+.contact-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-left:80px;
+}
+
+.contact-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-spacing: 10px;
+    table-layout: fixed;
+}
+
+.contact-row {
+    width: 100%;
 }
 
 .contact-item-img {
-    width: 32px;  
-    height: 32px;  
-    margin-left:20px;
+    width: 45px;
+    padding: 5px;
+    vertical-align: middle;
 }
 
-.contact-item-img * {
-    max-width: 40px;
-    max-height: 40px;
+    .contact-item-img img {
+        width: 32px;
+        height: 32px;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+.contact-value {
+    width: auto;
+    vertical-align: middle;
+    text-align: left;
 }
 
-.contact-table{
-    margin-top:20px;
-    margin-left:470px;
-    border-spacing:10px;
+.contact-link,
+.contact-location {
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: clamp(15px, 2vw, 20px);
+    word-break: break-word;
 }
 
 .contact-link {
-    font-family: Arial, sans-serif;
-    color: white;
-    font-size: 20px;
+    text-decoration: none;
 }
+
+
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width: 768px) {
 
     .contact {
-        padding: 50px 25px;
+        padding: 30px 20px 50px;
     }
-    .contact-title h1 {
-        font-size: 48px;
+
+    .hero-image-contact {
+        margin-top: 20px;
+    }
+
+        .hero-image-contact img {
+            width: 210px;
+            height: 210px;
+            border-width: 8px;
+        }
+
+        .hero-image-contact::before {
+            width: 320px;
+            height: 320px;
+            filter: blur(90px);
+        }
+
+    .contact-description {
+        padding: 0 10px;
+    }
+
+    .contact-table {
+        max-width: 550px;
+        border-spacing: 5px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .contact {
+        padding: 20px 15px 40px;
+    }
+
+    .hero-image-contact {
+        margin-top: 15px;
+    }
+
+        .hero-image-contact img {
+            width: 170px;
+            height: 170px;
+            border-width: 7px;
+        }
+
+        .hero-image-contact::before {
+            width: 250px;
+            height: 250px;
+            filter: blur(70px);
+        }
+
+    .contact-eyebrow {
+        font-size: 13px;
+    }
+
+    .contact-title {
+        font-size: 30px;
+    }
+
+    .contact-description {
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 0;
+    }
+
+    .contact-table {
+        width: 100%;
+        border-spacing: 3px;
+    }
+
+    .contact-item-img {
+        width: 40px;
+        padding: 4px;
+    }
+
+        .contact-item-img img {
+            width: 28px;
+            height: 28px;
+        }
+
+    .contact-link,
+    .contact-location {
+        font-size: 15px;
     }
 }
