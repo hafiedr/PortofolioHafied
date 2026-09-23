@@ -1,0 +1,313 @@
+﻿.work {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px 30px;
+    box-sizing: border-box;
+}
+
+.work-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.work-header h1 {
+    font-family: Arial, sans-serif;
+    font-size: clamp(30px, 5vw, 40px);
+    color: #f5bd35;
+    margin: 0;
+}
+
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   VERTICAL LINE
+========================= */
+
+.timeline::before {
+    content: "";
+    position: absolute;
+
+    top: 5px;
+    bottom: 5px;
+
+    left: 205px;
+
+    width: 2px;
+
+    background: #f5bd35;
+
+    box-shadow:
+        0 0 8px rgba(245, 189, 53, 0.7);
+
+    z-index: 0;
+}
+
+
+/* =========================
+   TIMELINE ITEM
+========================= */
+
+.timeline-item {
+    display: grid;
+
+    grid-template-columns: 180px 30px minmax(0, 1fr);
+
+    column-gap: 10px;
+
+    position: relative;
+
+    min-height: 90px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   DATE
+========================= */
+
+.timeline-date {
+    grid-column: 1;
+
+    text-align: right;
+
+    padding-top: 0;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   MARKER
+========================= */
+
+.timeline-marker {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-marker span {
+    width: 10px;
+    height: 10px;
+    margin-top: 0px;
+    border: 2px solid #f5bd35;
+    border-radius: 50%;
+    background: #0b1220;
+    box-shadow: 0 0 5px rgba(245, 189, 53, 0.8);
+    box-sizing: content-box;
+}
+
+.timeline-marker.active span{
+    background: #f5bd35;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.timeline-content {
+    grid-column: 3;
+    min-width: 0;
+    padding-left: 0;
+}
+
+.timeline-title h2 {
+    margin: 0 0 4px;
+    font-size: 18px;
+}
+
+.timeline-title span {
+    font-size: 13px;
+}
+
+.timeline-description {
+    margin-top: 8px;
+}
+
+.timeline-description ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.timeline-description li {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    .work {
+        padding: 30px 15px;
+    }
+
+    .work-header {
+        margin-bottom: 30px;
+    }
+
+    .timeline {
+        max-width: 650px;
+    }
+
+    /* Line berada di kolom pertama */
+    .timeline::before {
+        left: 19px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 40px minmax(0, 1fr);
+
+        column-gap: 10px;
+
+        margin-bottom: 25px;
+    }
+
+    /* =========================
+       DATE
+    ========================= */
+
+    .timeline-date {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
+        padding: 0;
+        margin-bottom: 5px;
+        font-size: 13px;
+    }
+
+    /* =========================
+       MARKER
+    ========================= */
+
+    .timeline-marker {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+
+        justify-content: center;
+
+        align-items: flex-start;
+    }
+
+    /* =========================
+       CONTENT
+    ========================= */
+
+    .timeline-content {
+        grid-column: 2;
+        grid-row: 2;
+
+        padding: 0;
+    }
+
+    .timeline-title h2 {
+        font-size: 16px;
+    }
+
+    .timeline-title span {
+        font-size: 12px;
+    }
+
+    .timeline-description li {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .work {
+        padding: 25px 12px 30px;
+    }
+
+    .work-header h1 {
+        font-size: 30px;
+    }
+
+    /* =========================
+       LINE
+    ========================= */
+
+    .timeline::before {
+        left: 14px;
+    }
+
+    /* =========================
+       ITEM
+    ========================= */
+
+    .timeline-item {
+        grid-template-columns: 30px minmax(0, 1fr);
+
+        column-gap: 10px;
+
+        margin-bottom: 25px;
+    }
+
+    /* =========================
+       MARKER
+    ========================= */
+
+    .timeline-marker span {
+        width: 10px;
+        height: 10px;
+
+        margin-top: 2px;
+    }
+
+    /* =========================
+       DATE
+    ========================= */
+
+    .timeline-date {
+        font-size: 12px;
+    }
+
+    /* =========================
+       TITLE
+    ========================= */
+
+    .timeline-title h2 {
+        font-size: 15px;
+    }
+
+    .timeline-title span {
+        font-size: 12px;
+    }
+
+    /* =========================
+       DESCRIPTION
+    ========================= */
+
+    .timeline-description {
+        margin-top: 6px;
+    }
+
+    .timeline-description li {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+}

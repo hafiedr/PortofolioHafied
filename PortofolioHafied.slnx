@@ -2,6 +2,7 @@
   <Folder Name="/MyPortofolio/" />
   <Folder Name="/MyPortofolio/css/">
     <File Path="button.css" />
+    <File Path="career.css" />
     <File Path="contact.css" />
     <File Path="hero.css" />
     <File Path="main.css" />
@@ -14,6 +15,7 @@
     <File Path="index.html" />
   </Folder>
   <Folder Name="/MyPortofolio/html/pages/">
+    <File Path="careerHistory.html" />
     <File Path="contact.html" />
   </Folder>
   <Folder Name="/MyPortofolio/image/" />
